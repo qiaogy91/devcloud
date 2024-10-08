@@ -9,6 +9,7 @@ import (
 
 func (i *Impl) Sync(ctx context.Context, req *event.SyncReq) {
 	consumer := i.kafkaSvc.Consumer(i.Topic, event.AppName)
+	defer func() { _ = consumer.Close() }()
 	for {
 		msg, err := consumer.ReadMessage(context.Background())
 		if err != nil {
@@ -19,13 +20,10 @@ func (i *Impl) Sync(ctx context.Context, req *event.SyncReq) {
 		ins := &event.Event{}
 		if err := json.Unmarshal(msg.Value, ins); err != nil {
 			i.log.Error().Msgf("event unmarshal failed, %s", err)
-			i.log.Error().Msgf("event unmarshal failed, %s", msg.Value)
 			time.Sleep(5 * time.Second)
 			continue
 		}
-
 	}
-
 }
 
 func (i *Impl) Query(ctx context.Context, req *event.QueryReq) (*event.EventsSet, error) {

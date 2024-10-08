@@ -524,3 +524,62 @@
 {"level":"info","component":"grpc","time":"2024-10-07T15:09:29+08:00","caller":"grpc/rpc.go:75           ","message":"Shutdown GrpcServer Complete"}
 {"level":"error","component":"http","time":"2024-10-07T15:09:29+08:00","caller":"http/http.go:64          ","message":"http: Server closed"}
 {"level":"info","component":"http","time":"2024-10-07T15:09:29+08:00","caller":"http/http.go:71          ","message":"Shutdown HttpServer Complete"}
+{"level":"info","component":"restful-framework","time":"2024-10-07T15:27:55+08:00","caller":"gorestful/gorestful.go:41","message":"restful trace enabled"}
+{"level":"info","component":"datasource","time":"2024-10-07T15:27:55+08:00","caller":"datasource/mysql.go:69   ","message":"mysql trace enabled"}
+{"level":"info","component":"cors","time":"2024-10-07T15:27:55+08:00","caller":"restful/cors.go:44       ","message":"restful cors enabled"}
+{"level":"info","component":"restful-framework","time":"2024-10-07T15:28:34+08:00","caller":"gorestful/gorestful.go:41","message":"restful trace enabled"}
+{"level":"info","component":"datasource","time":"2024-10-07T15:28:34+08:00","caller":"datasource/mysql.go:69   ","message":"mysql trace enabled"}
+{"level":"info","component":"cors","time":"2024-10-07T15:28:34+08:00","caller":"restful/cors.go:44       ","message":"restful cors enabled"}
+{"level":"info","component":"restful-framework","time":"2024-10-07T15:31:38+08:00","caller":"gorestful/gorestful.go:41","message":"restful trace enabled"}
+{"level":"info","component":"datasource","time":"2024-10-07T15:31:38+08:00","caller":"datasource/mysql.go:69   ","message":"mysql trace enabled"}
+{"level":"info","component":"cors","time":"2024-10-07T15:31:38+08:00","caller":"restful/cors.go:44       ","message":"restful cors enabled"}
+{"level":"info","component":"restful-framework","time":"2024-10-07T15:32:18+08:00","caller":"gorestful/gorestful.go:41","message":"restful trace enabled"}
+{"level":"info","component":"datasource","time":"2024-10-07T15:32:18+08:00","caller":"datasource/mysql.go:69   ","message":"mysql trace enabled"}
+{"level":"info","component":"cors","time":"2024-10-07T15:32:18+08:00","caller":"restful/cors.go:44       ","message":"restful cors enabled"}
+{"level":"info","component":"event","time":"2024-10-07T15:32:18+08:00","caller":"impl/impl.go:32          ","message":"kafka consumer at maudit/topic event/groupId"}
+{"level":"info","component":"metrics","time":"2024-10-07T15:32:18+08:00","caller":"restful/api.go:51        ","message":"Get the Metric using http://127.0.0.1:8080/metrics"}
+{"level":"info","component":"health","time":"2024-10-07T15:32:18+08:00","caller":"restful/api.go:34        ","message":"Get the Health using http://127.0.0.1:8080/health"}
+{"level":"info","component":"swagger","time":"2024-10-07T15:32:18+08:00","caller":"restful/api.go:30        ","message":"Get the API doc using http://127.0.0.1:8080/swagger/doc.json "}
+{"level":"info","component":"application-server","time":"2024-10-07T15:32:18+08:00","caller":"server/server.go:47      ","message":"loaded configs: [app log trace restful-framework datasource cors grpc http]"}
+{"level":"info","component":"application-server","time":"2024-10-07T15:32:18+08:00","caller":"server/server.go:48      ","message":"loaded defaults: [kafka]"}
+{"level":"info","component":"application-server","time":"2024-10-07T15:32:18+08:00","caller":"server/server.go:49      ","message":"loaded controllers: [event]"}
+{"level":"info","component":"application-server","time":"2024-10-07T15:32:18+08:00","caller":"server/server.go:50      ","message":"loaded apis: [metrics health swagger]"}
+{"level":"info","component":"grpc","time":"2024-10-07T15:32:18+08:00","caller":"grpc/rpc.go:67           ","message":"Started GrpcServer at: 127.0.0.1:18080"}
+{"level":"info","component":"http","time":"2024-10-07T15:32:18+08:00","caller":"http/http.go:62          ","message":"Started HttpServer at: 127.0.0.1:8080"}
+{"level":"info","component":"application-server","time":"2024-10-07T15:46:13+08:00","caller":"server/server.go:69      ","message":"receive signal 'interrupt', start graceful shutdown"}
+{"level":"info","component":"grpc","time":"2024-10-07T15:46:13+08:00","caller":"grpc/rpc.go:75           ","message":"Shutdown GrpcServer Complete"}
+{"level":"error","component":"http","time":"2024-10-07T15:46:13+08:00","caller":"http/http.go:64          ","message":"http: Server closed"}
+{"level":"info","component":"http","time":"2024-10-07T15:46:13+08:00","caller":"http/http.go:71          ","message":"Shutdown HttpServer Complete"}
+{"level":"info","component":"restful-framework","time":"2024-10-07T15:46:18+08:00","caller":"gorestful/gorestful.go:41","message":"restful trace enabled"}
+{"level":"info","component":"datasource","time":"2024-10-07T15:46:18+08:00","caller":"datasource/mysql.go:69   ","message":"mysql trace enabled"}
+{"level":"info","component":"cors","time":"2024-10-07T15:46:18+08:00","caller":"restful/cors.go:44       ","message":"restful cors enabled"}
+{"level":"info","component":"event","time":"2024-10-07T15:46:18+08:00","caller":"impl/impl.go:32          ","message":"kafka consumer at maudit/topic event/groupId"}
+{"level":"info","component":"metrics","time":"2024-10-07T15:46:18+08:00","caller":"restful/api.go:51        ","message":"Get the Metric using http://127.0.0.1:8080/metrics"}
+{"level":"info","component":"health","time":"2024-10-07T15:46:18+08:00","caller":"restful/api.go:34        ","message":"Get the Health using http://127.0.0.1:8080/health"}
+{"level":"info","component":"swagger","time":"2024-10-07T15:46:18+08:00","caller":"restful/api.go:30        ","message":"Get the API doc using http://127.0.0.1:8080/swagger/doc.json "}
+{"level":"info","component":"application-server","time":"2024-10-07T15:46:18+08:00","caller":"server/server.go:47      ","message":"loaded configs: [app log trace restful-framework datasource cors grpc http]"}
+{"level":"info","component":"application-server","time":"2024-10-07T15:46:18+08:00","caller":"server/server.go:48      ","message":"loaded defaults: [kafka]"}
+{"level":"info","component":"application-server","time":"2024-10-07T15:46:18+08:00","caller":"server/server.go:49      ","message":"loaded controllers: [event]"}
+{"level":"info","component":"application-server","time":"2024-10-07T15:46:18+08:00","caller":"server/server.go:50      ","message":"loaded apis: [metrics health swagger]"}
+{"level":"info","component":"http","time":"2024-10-07T15:46:18+08:00","caller":"http/http.go:62          ","message":"Started HttpServer at: 127.0.0.1:8080"}
+{"level":"info","component":"grpc","time":"2024-10-07T15:46:18+08:00","caller":"grpc/rpc.go:67           ","message":"Started GrpcServer at: 127.0.0.1:18080"}
+{"level":"info","component":"application-server","time":"2024-10-07T17:10:01+08:00","caller":"server/server.go:69      ","message":"receive signal 'interrupt', start graceful shutdown"}
+{"level":"info","component":"grpc","time":"2024-10-07T17:10:01+08:00","caller":"grpc/rpc.go:75           ","message":"Shutdown GrpcServer Complete"}
+{"level":"error","component":"http","time":"2024-10-07T17:10:01+08:00","caller":"http/http.go:64          ","message":"http: Server closed"}
+{"level":"info","component":"http","time":"2024-10-07T17:10:01+08:00","caller":"http/http.go:71          ","message":"Shutdown HttpServer Complete"}
+{"level":"info","component":"gin-framework","time":"2024-10-07T17:10:08+08:00","caller":"gin/framework.go:44      ","message":"gin trace enabled"}
+{"level":"info","component":"datasource","time":"2024-10-07T17:10:08+08:00","caller":"datasource/mysql.go:69   ","message":"mysql trace enabled"}
+{"level":"info","component":"cors","time":"2024-10-07T17:10:08+08:00","caller":"gin/cors.go:43           ","message":"gin cors enabled"}
+{"level":"info","component":"event","time":"2024-10-07T17:10:08+08:00","caller":"impl/impl.go:32          ","message":"kafka consumer at maudit/topic event/groupId"}
+{"level":"info","component":"metrics","time":"2024-10-07T17:10:08+08:00","caller":"gin/api.go:47            ","message":"Get the Metric using http://127.0.0.1:8080/metrics"}
+{"level":"info","component":"health","time":"2024-10-07T17:10:08+08:00","caller":"gin/api.go:28            ","message":"Get the Health using http://127.0.0.1:8080/health"}
+{"level":"info","component":"application-server","time":"2024-10-07T17:10:08+08:00","caller":"server/server.go:47      ","message":"loaded configs: [app log trace gin-framework datasource cors grpc http]"}
+{"level":"info","component":"application-server","time":"2024-10-07T17:10:08+08:00","caller":"server/server.go:48      ","message":"loaded defaults: [kafka]"}
+{"level":"info","component":"application-server","time":"2024-10-07T17:10:08+08:00","caller":"server/server.go:49      ","message":"loaded controllers: [event]"}
+{"level":"info","component":"application-server","time":"2024-10-07T17:10:08+08:00","caller":"server/server.go:50      ","message":"loaded apis: [metrics health]"}
+{"level":"info","component":"grpc","time":"2024-10-07T17:10:08+08:00","caller":"grpc/rpc.go:67           ","message":"Started GrpcServer at: 127.0.0.1:18080"}
+{"level":"info","component":"http","time":"2024-10-07T17:10:08+08:00","caller":"http/http.go:62          ","message":"Started HttpServer at: 127.0.0.1:8080"}
+{"level":"info","component":"application-server","time":"2024-10-07T22:51:11+08:00","caller":"server/server.go:69      ","message":"receive signal 'hangup', start graceful shutdown"}
+{"level":"info","component":"grpc","time":"2024-10-07T22:51:11+08:00","caller":"grpc/rpc.go:75           ","message":"Shutdown GrpcServer Complete"}
+{"level":"error","component":"http","time":"2024-10-07T22:51:11+08:00","caller":"http/http.go:64          ","message":"http: Server closed"}
+{"level":"info","component":"http","time":"2024-10-07T22:51:11+08:00","caller":"http/http.go:71          ","message":"Shutdown HttpServer Complete"}

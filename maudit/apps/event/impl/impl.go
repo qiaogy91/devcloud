@@ -3,10 +3,10 @@ package impl
 import (
 	"context"
 	"github.com/qiaogy91/devcloud/maudit/apps/event"
-	kafkaClient "github.com/qiaogy91/devcloud/maudit/apps/kafka"
 	"github.com/qiaogy91/ioc"
 	"github.com/qiaogy91/ioc/config/datasource"
 	"github.com/qiaogy91/ioc/config/log"
+	kafkaClient "github.com/qiaogy91/ioc/default/kafka"
 	"github.com/rs/zerolog"
 	"gorm.io/gorm"
 )
@@ -26,9 +26,9 @@ func (i *Impl) Priority() int { return 301 }
 func (i *Impl) Init() {
 	i.log = log.Sub(event.AppName)
 	i.db = datasource.DB()
-	i.kafkaSvc = ioc.Default().Get(kafkaClient.AppName).(kafkaClient.Service)
+	i.kafkaSvc = kafkaClient.GetClient()
 
-	//
+	// 启动一个协程去执行Sync 操作
 	i.log.Info().Msgf("kafka consumer at %s/topic %s/groupId", i.Topic, event.AppName)
 	go i.Sync(context.Background(), &event.SyncReq{})
 }
